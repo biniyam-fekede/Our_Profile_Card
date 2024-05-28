@@ -14,15 +14,14 @@
         font-family: Arial, sans-serif;
         background-color: hsl(136, 94%, 7%);
       }
-      /* Header CSS */
       .header-content {
-        background-color: #1b0425;
+        background-color: #333;
         padding: 20px;
         text-align: center;
       }
       .header-logo {
         display: block;
-        color: #e1dede;
+        color: #fff;
         text-decoration: none;
         font-size: 24px;
         font-weight: bold;
@@ -39,7 +38,7 @@
         margin-left: 20px;
       }
       .header-section ul li a {
-        color: #ffffff;
+        color: #fff;
         text-decoration: none;
         font-size: 18px;
       }
@@ -48,24 +47,24 @@
       }
       /* Profile Card CSS */
       .profile-card {
-        background: rgb(30, 8, 8);
-        border: 1px solid #333;
+        background: white;
+        border: 1px solid #ddd;
         margin: 20px auto;
         padding: 20px;
         width: 80%;
         max-width: 600px;
-        box-shadow: 0 2px 5px rgba(101, 7, 7, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
-
       .profile-card img {
         border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
       }
-
       .profile-card h3 {
-        color: #ffffff;
+        color: #333;
       }
-
       .profile-card p {
         font-size: 16px;
         line-height: 1.5;
@@ -76,63 +75,65 @@
         background-color: #333;
         color: #ffffff;
         text-align: center;
-        padding: 10px;
-        font-size: 12px;
+        padding: 20px 10px;
+        font-size: 14px;
       }
-
       .footer-content {
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        flex-wrap: wrap;
+        padding: 10px 0;
       }
-
       .footer-section {
-        margin: 5px;
+        color: #fff;
+        margin: 10px;
+        flex: 1;
+        min-width: 200px;
       }
-
       .footer-section h3 {
         color: #ffff99;
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 10px;
       }
-
       .footer-section p,
-      .footer-section li a {
-        color: #cccccc;
-        font-size: 12px;
-      }
-
       .footer-section ul {
-        list-style-type: none;
+        margin: 0;
         padding: 0;
+        list-style-type: none;
       }
-
+      .footer-section ul {
+        margin-top: 5px;
+      }
+      .footer-section li {
+        margin-bottom: 5px;
+      }
       .footer-section li a {
         text-decoration: none;
-        color: inherit;
+        color: #ffffff;
         transition: color 0.3s;
       }
-
       .footer-section li a:hover {
-        color: #ffffff;
+        color: #ffff99;
       }
-
       .footer-bottom {
         margin-top: 10px;
         border-top: 1px solid #444;
-        padding-top: 5px;
+        padding-top: 10px;
       }
-
       .footer-bottom p {
         margin: 0;
+        font-size: 12px;
       }
     </style>
   </head>
   <body>
-      <header>
+    <header>
       <div class="header-content">
-        <a href="#" class="header-logo">Profile Cards</a>
+        <!-- Logo for the website -->
+        <a href="#" class="header-logo">My Profile Cards</a>
         <div class="header-section">
           <ul>
+            <!-- Navigation links -->
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -141,6 +142,38 @@
         </div>
       </div>
     </header>
+    <!-- Profile Card for Biniyam -->
+    <div class="profile-card">
+      <img
+        src="/Users/biniyamfekedegebreyohannes/Documents/GitHub/hands-on-selector-2-spr24/my-profile-card_Biniyam_G/photo_5895281688722915372_y.jpg"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>Biniyam Gebreyohannes</h3>
+      <p>
+        Biniyam Gebreyohannes is a passionate web developer and a dedicated Year
+        Up student. He excels in creating user-friendly interfaces and engaging
+        web experiences. Biniyam has a strong foundation in both front-end and
+        back-end development, with proficiency in technologies like HTML, CSS,
+        JavaScript, and various modern frameworks. His commitment to continuous
+        learning and improvement makes him a valuable asset to any development
+        team.
+      </p>
+    </div>
+    <!-- Profile Card for Katie -->
+    <div class="profile-card">
+      <img src="katie.jpg" alt="Profile Image" class="profile-photo" />
+      <h3>Katie Cea</h3>
+      <p>
+        Hi there! My name is Katie and I am a Year Up student specializing in
+        Application and Development. I am a very creative person and have a
+        passion for learning and making new things. I enjoy learning about
+        programming and design and hope to have a career in the tech field. A
+        fun fact about myself is that I love animals, especially dogs, and I
+        have 5 dogs and 1 cat. I currently reside in the Pacific Northwest.
+      </p>
+    </div>
+    <!-- Profile Card for Ernesto -->
     <div class="profile-card">
       <img
         src="https://picsum.photos/100"
@@ -152,44 +185,68 @@
         Ernesto is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
       </p>
-       <div class="profile-card">
-      <img
-        src="https://picsum.photos/100"
-        alt="Profile Image"
-        class="profile-photo"
-      />
-      <h3>Biniyam Gebreyohannes</h3>
-      <p>
-        Biniyam is a passionate web developer with expertise in creating
-        user-friendly interfaces and engaging web experiences.
-      </p>
-       <div class="profile-card">
-      <img
-        src="https://picsum.photos/100"
-        alt="Profile Image"
-        class="profile-photo"
-      />
-      <h3>Katie Cea</h3>
-      <p>
-        Katie is a passionate web developer with expertise in creating
-        user-friendly interfaces and engaging web experiences.
-      </p>
     </div>
     <footer>
       <div class="footer-content">
+        <!-- About Us section -->
         <div class="footer-section">
           <h3>About Us</h3>
-          <p>We are Yearup students who are passionate about the new technologies and focus on our career growth.</p>
+          <p>
+            We are Year Up students passionate about new technologies and
+            focused on career growth.
+          </p>
         </div>
+        <!-- Contact section -->
         <div class="footer-section">
           <h3>Contact</h3>
-          <p>Email: emartinez@sea.yearup.org</p>
+          <p>Email:</p>
+          <ul>
+            <li>
+              <a href="mailto:bgebreyohannes@sea.yearup.org" class="email-link"
+                >bgebreyohannes@sea.yearup.org</a
+              >
+            </li>
+            <li>
+              <a href="mailto:KCea@sea.yearup.org" class="email-link"
+                >KCea@sea.yearup.org</a
+              >
+            </li>
+            <li>
+              <a href="mailto:EMartinez@sea.yearup.org" class="email-link"
+                >EMartinez@sea.yearup.org</a
+              >
+            </li>
+          </ul>
         </div>
+        <!-- Follow Us section -->
         <div class="footer-section">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="www.linkedin.com/in/ernesto-martinez11">LinkedIn</a></li>
-            <li><a href="https://github.com/Martiern11">Github</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/biniyam-fekede-gebreyohannes-5a5883219"
+                >LinkedIn - Biniyam</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ernesto-martinez11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                >LinkedIn - Ernesto</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/katie-cea?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                >LinkedIn - Katie</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/biniyam-fekede">GitHub - Biniyam</a>
+            </li>
+            <li><a href="https://github.com/kikicea">GitHub - Katie</a></li>
+            <li>
+              <a href="https://github.com/Martiern11">GitHub - Ernesto</a>
+            </li>
           </ul>
         </div>
       </div>
