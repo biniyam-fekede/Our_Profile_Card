@@ -12,6 +12,7 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        background-color: hsl(136, 94%, 7%);
       }
       .header-content {
         background-color: #333;
@@ -44,66 +45,6 @@
       .header-section ul li a:hover {
         text-decoration: underline;
       }
-
-      /* Footer CSS */
-      footer {
-        background-color: #333;
-        color: #ffffff;
-        text-align: center;
-        padding: 10px;
-        font-size: 12px;
-      }
-
-      .footer-content {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-      }
-
-      .footer-section {
-        color: #fff;
-        margin: 5px;
-      }
-
-      .footer-section h3 {
-        color: #ffff99;
-        font-size: 14px;
-      }
-
-      .footer-section p,
-      .footer-section li a {
-        color: #ffffff;
-        font-size: 12px;
-      }
-
-      .footer-section ul {
-        list-style-type: none;
-        color: #fff;
-        padding: 0;
-      }
-
-      .footer-section li a {
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s;
-      }
-
-      .footer-section li a:hover {
-        color: #ffffff;
-      }
-      .footer-section .email-link {
-        color: #ffff;
-      }
-      .footer-bottom {
-        margin-top: 10px;
-        border-top: 1px solid #444;
-        padding-top: 5px;
-      }
-
-      .footer-bottom p {
-        margin: 0;
-      }
-
       /* Profile Card CSS */
       .profile-card {
         background: white;
@@ -115,31 +56,84 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
-
       .profile-card img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
         object-fit: cover;
       }
-
       .profile-card h3 {
         color: #333;
       }
-
       .profile-card p {
         font-size: 16px;
         line-height: 1.5;
         color: #666;
+      }
+      /* Footer CSS */
+      footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 0;
+      }
+      .footer-section {
+        color: #fff;
+        margin: 10px;
+        flex: 1;
+        min-width: 200px;
+      }
+      .footer-section h3 {
+        color: #ffff99;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .footer-section p,
+      .footer-section ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .footer-section ul {
+        margin-top: 5px;
+      }
+      .footer-section li {
+        margin-bottom: 5px;
+      }
+      .footer-section li a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: color 0.3s;
+      }
+      .footer-section li a:hover {
+        color: #ffff99;
+      }
+      .footer-bottom {
+        margin-top: 10px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+      }
+      .footer-bottom p {
+        margin: 0;
+        font-size: 12px;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="header-content">
+        <!-- Logo for the website -->
         <a href="#" class="header-logo">My Profile Cards</a>
         <div class="header-section">
           <ul>
+            <!-- Navigation links -->
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -148,6 +142,7 @@
         </div>
       </div>
     </header>
+    <!-- Profile Card for Biniyam -->
     <div class="profile-card">
       <img
         src="/Users/biniyamfekedegebreyohannes/Documents/GitHub/hands-on-selector-2-spr24/my-profile-card_Biniyam_G/photo_5895281688722915372_y.jpg"
@@ -165,9 +160,9 @@
         team.
       </p>
     </div>
+    <!-- Profile Card for Katie -->
     <div class="profile-card">
       <img src="katie.jpg" alt="Profile Image" class="profile-photo" />
-
       <h3>Katie Cea</h3>
       <p>
         Hi there! My name is Katie and I am a Year Up student specializing in
@@ -178,6 +173,7 @@
         have 5 dogs and 1 cat. I currently reside in the Pacific Northwest.
       </p>
     </div>
+    <!-- Profile Card for Ernesto -->
     <div class="profile-card">
       <img
         src="https://picsum.photos/100"
@@ -192,28 +188,65 @@
     </div>
     <footer>
       <div class="footer-content">
+        <!-- About Us section -->
         <div class="footer-section">
           <h3>About Us</h3>
-          <p>Details about the company.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Contact</h3>
           <p>
-            Email:
-            <a href="#" class="email-link">bgebreyohannes@sea.yearup.org</a>
+            We are Year Up students passionate about new technologies and
+            focused on career growth.
           </p>
         </div>
+        <!-- Contact section -->
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email:</p>
+          <ul>
+            <li>
+              <a href="mailto:bgebreyohannes@sea.yearup.org" class="email-link"
+                >bgebreyohannes@sea.yearup.org</a
+              >
+            </li>
+            <li>
+              <a href="mailto:KCea@sea.yearup.org" class="email-link"
+                >KCea@sea.yearup.org</a
+              >
+            </li>
+            <li>
+              <a href="mailto:EMartinez@sea.yearup.org" class="email-link"
+                >EMartinez@sea.yearup.org</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Follow Us section -->
         <div class="footer-section">
           <h3>Follow Us</h3>
           <ul>
             <li>
               <a
                 href="https://www.linkedin.com/in/biniyam-fekede-gebreyohannes-5a5883219"
-                >LinkedIn</a
+                >LinkedIn - Biniyam</a
               >
             </li>
-            <li><a href="https://github.com/biniyam-fekede">GitHub</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ernesto-martinez11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                >LinkedIn - Ernesto</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/katie-cea?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                >LinkedIn - Katie</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/biniyam-fekede">GitHub - Biniyam</a>
+            </li>
+            <li><a href="https://github.com/kikicea">GitHub - Katie</a></li>
+            <li>
+              <a href="https://github.com/Martiern11">GitHub - Ernesto</a>
+            </li>
           </ul>
         </div>
       </div>
